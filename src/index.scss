@@ -5,18 +5,17 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-    &:focus {
+  &:focus {
     outline: 0;
   }
 }
 
-.dark-mode{
+.dark-mode {
   background-color: black;
   h1 {
     color: #fff;
   }
 }
-
 
 .container {
   max-width: 960px;
@@ -33,13 +32,13 @@
     margin-bottom: 24px;
     padding-top: 24px;
     .toggle {
-      background-color: #E1E1E1;
+      background-color: #e1e1e1;
       border-radius: 15px;
       padding: 5px 10px;
       cursor: pointer;
       transition: 0.4s;
-      &:hover{
-        background-color: #EDEDED;
+      &:hover {
+        background-color: #ededed;
       }
     }
   }
@@ -67,25 +66,28 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      white-space: pre-wrap;
-      &.new{
-        background-color: #67D7CC;
+
+      span {
+        word-wrap: break-word;
+      }
+      &.new {
+        background-color: #67d7cc;
         textarea {
           resize: none;
-          background-color: #67D7CC;
+          background-color: #67d7cc;
         }
         .save {
-          background-color: #E1E1E1;
+          background-color: #e1e1e1;
           border-radius: 15px;
           padding: 5px 10px;
           cursor: pointer;
           transition: 0.4s;
-          &:hover{
-            background-color: #EDEDED;
+          &:hover {
+            background-color: #ededed;
           }
         }
       }
-      .footer{
+      .footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
