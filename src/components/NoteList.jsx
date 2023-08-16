@@ -22,8 +22,10 @@ const NoteList = ({ notes, setNotes }) => {
 
   const handleUpdateNote = (id, text) => {
     let newNote = notes.map((note) => {
+      const date = new Date();
       if (note.id === id) {
         note.text = text;
+        note.date = date.toLocaleDateString();
       }
       return note;
     });
