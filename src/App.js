@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('notes-app-data'));
-    if (savedNotes.length !== 0) {
+    if (savedNotes?.length !== 0) {
       setNotes(savedNotes);
     }
   }, []);
